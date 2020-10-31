@@ -54,7 +54,7 @@ img{
 }
 
 .register__wrapper{
-    padding: 305px 0 290px;
+    padding: 250px 0 290px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -181,7 +181,7 @@ img{
 
 /* Register Open */
 .register-open .register__wrapper{
-    padding: 120px 0;
+    padding: 100px 0;
 } 
 
 .register-open .register__buttons{
