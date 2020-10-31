@@ -1,0 +1,203 @@
+html{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: white;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.visually-hidden{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.container{
+    max-width: 1150px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Register Page */
+.register{
+    background-color: hsl(0, 100%, 74%);
+    background-image: url("../images/bg-intro-desktop.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.register__wrapper{
+    padding: 305px 0 290px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+} 
+
+.register__texts-wrapper{
+    max-width: 490px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.register__heading{
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 43px;
+    line-height: 1.3;
+}
+
+.register__text{
+    font-size: 14px;
+    margin: 0px;
+    line-height: 1.7;
+}
+
+.register__buttons{
+    display: flex;
+    align-items: center;
+}
+
+.register__button{
+    padding: 20px 40px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.register__button + .register__button{
+    margin-left: 20px;
+}
+
+.signin{
+    background-color: #37CC8A;
+    color: white;
+}
+
+.signup{
+    background-color: #5D54A3;
+    color: white;
+}
+
+/* Modal Form  */
+.modal{
+    display: none;
+    max-width: 540px;
+}
+
+.modal__top{
+    padding: 20px 110px;
+    background-color: #5D54A3;
+    font-size: 15px;
+    border-radius: 5px;
+    margin-bottom: 25px;
+}
+
+.register__form{
+    position: relative;
+    padding: 40px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.register__input{
+    width: 100%;
+    padding: 20px 30px;
+    border-radius: 5px;
+    border: 1px solid #DEDEDE;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    color: #706F74;
+}
+
+.register__input:focus{
+    outline-color:  #5C5871;
+    color: #47464B;
+}
+
+.submit-button{
+    width: 100%;
+    padding: 20px 0;
+    background-color: #37CC8A;
+    color: white;
+    font-weight: 500;
+    text-transform: uppercase;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.submit-button:focus{
+    outline-color: #5C5871;
+}
+
+.close-button{
+    position: absolute;
+    right: -15px;
+    top: -15px;
+    width: 35px;
+    height: 35px;
+    background-color: transparent;
+    background-image: url(../images/times-circle-regular.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    border: none;
+    cursor: pointer;
+}
+
+.close-button:focus{
+    outline: none;
+}
+
+
+/* Register Open */
+.register-open .register__wrapper{
+    padding: 120px 0;
+} 
+
+.register-open .register__buttons{
+    display: none;
+}
+
+.register-open .modal{
+    display: block;
+}
+
+.register-open .register__wrapper{
+    flex-direction: row;
+    justify-content: space-between;
+} 
+
+.register-open .register__texts-wrapper{
+    text-align: left;
+    margin-bottom: 0px;
+}
